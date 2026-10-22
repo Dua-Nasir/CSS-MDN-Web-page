@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+ <!-- ///////////////// 
+      Custom Links
+ /////////////////// -->
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./medium.css">
+
+
+<!-- ///////////////// 
+    Font Awesome CDN  
+ /////////////////// -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+</head>
+
+<body>
+
+<!-- /////////////////////////////////////////////////// 
+                    Header starts  
+ ///////////////////////////////////////////////////// -->
+
+<header>
+    <div class="header">
+        <div class="logoo"><img src="./assets/image-removebg-preview (5).png" alt=""></div>
+        <!-- Logo ke baad wala button (sirf responsive par dikhega) -->
+        <div class="scroll-wrapper">
+         <div class="logo"><img src="./assets/image-removebg-preview (5).png" alt=""></div>
+
+            <div class="scroll-dropdown">
+                <h3>In this article</h3>
+                <a href="#Basic">Basic concepts of flexbox</a>
+                <a href="#two">The two axes of flexbox</a>
+                <a href="#main">The main axis</a>
+                <a href="#flex">The flex container</a>
+                <a href="#values">Initial values</a>
+            </div>
+        </div>
+
+        <!-- Hamburger menu -->
+        <div class="menu-wrapper">
+            <div class="menus"><i class="fa-solid fa-bars"></i></div>
+
+            <div class="menu-box">
+                <nav>
+                    <a href="">HTML <i class="fa-solid fa-angle-down"></i></a>
+                    <a href="">CSS <i class="fa-solid fa-angle-down"></i></a>
+                    <a href="">JAVASCRIPT <i class="fa-solid fa-angle-down"></i></a>
+                    <a href="">WEB APIs <i class="fa-solid fa-angle-down"></i></a>
+                    <a href=""> All <i class="fa-solid fa-angle-down"></i></a>
+                </nav>
+
+                <div class="icons">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<!-- /////////////////////////////////////////////////// 
+                    Header Ends  
+ ///////////////////////////////////////////////////// -->
+
+ <!-- /////////////////////////////////////////////////// 
+                   after header Line starts  
+ ///////////////////////////////////////////////////// -->
+
+    <div class="belowheader">
+
+       <div class="line">
+            <a href="">Web <i class="fa-solid fa-chevron-right"></i></a>
+            <a href="">CSS <i class="fa-solid fa-chevron-right"></i></a>
+            <a href="">Guides <i class="fa-solid fa-chevron-right"></i></a>
+            <a href="">Flexible box layout <i class="fa-solid fa-chevron-right"></i></a>
+            <a href="">concepts</a> 
+       </div>
+
+       <div class="cornerline">
+            <a href=""><i class="fa-solid fa-circle-half-stroke"></i> Theme</a>
+            <a href=""> <i class="fa-solid fa-language"></i> English (US) </a>
+       </div>
+        
+
+    </div>
+
+<!-- /////////////////////////////////////////////////// 
+                   after header Line Ends 
+ ///////////////////////////////////////////////////// -->
+
+
+<!-- /////////////////////////////////////////////////// 
+                   actual content starts 
+ ///////////////////////////////////////////////////// -->
+
+    <div class="parent">
+   
+ <!--================================== Sidebar Side part ====================================================-->
+
+       <div class="sidebar">
+        <b>CSS</b>
+        <br> <br>
+        <b>GUIDES</b> 
+        <br> <br>
+        <p> <i class="fa-solid fa-chevron-right"></i>Modules</p>
+        <p> <i class="fa-solid fa-chevron-right"></i>Anchor positioning</p>
+        <p> <i class="fa-solid fa-chevron-right"></i>Animations</p>
+        <p> <i class="fa-solid fa-chevron-right"></i>Backgrounds and borders</p>
+        <p> <i class="fa-solid fa-chevron-right"></i>Borders and box decorations</p>
+        <p> <i class="fa-solid fa-chevron-right"></i>Box alignment</p>
+        <p> <i class="fa-solid fa-chevron-right"></i>Box model</p>
+        <p> <i class="fa-solid fa-chevron-right"></i>Box sizing</p>
+        <p> <i class="fa-solid fa-chevron-right"></i>Cascade</p>
+        <p> <i class="fa-solid fa-chevron-right"></i>Cascading variables</p>
+        <p> <i class="fa-solid fa-chevron-right"></i>Colors</p>
+        <p> <i class="fa-solid fa-chevron-right"></i>Conditional rules</p>
+        <p> <i class="fa-solid fa-chevron-right"></i>Containment</p>
+        <p> <i class="fa-solid fa-chevron-right"></i>Counters</p>
+
+       </div>     
+
+
+ <!--================================== Main content middle part ====================================================-->
+
+
+     <div class="content">
+        <h1 id="Basic">Basic concepts of flexbox</h1>
+
+        <br><br>
+
+        <p>The <span>flexible box layout</span> module (usually referred to as flexbox) is a one-dimensional layout model for 
+        distributing space between items and includes numerous alignment capabilities. This article gives an outline
+        of the main features of flexbox, which we will explore in more detail in the rest of these guides.</p>
+
+         <br><br>
+
+        <p>When we describe flexbox as being one-dimensional we are describing the fact that flexbox deals with layout
+        in one dimension at a time — either as a row or as a column. This can be contrasted with the two-dimensional
+         model of <span>CSS Grid Layout</span>, which controls columns and rows together.</p>
+
+        <br><br>
+
+        <h1 id="two">The two axes of flexbox</h1>
+
+        <br><br>
+
+        <p>When working with flexbox you need to think in terms of two axes — the main axis and the cross axis. The
+         <span>main axis</span> is defined by the <span class="span1">flex-direction</span> property, and the <span>cross axis</span> runs perpendicular to it. Everything
+          we do with flexbox refers back to these axes, so it is worth understanding how they work from the outset.</p>
+        
+        <br><br>
+
+        <h1 id="main">The main axis</h1>
+        <br><br>
+         <p>The <span>main axis</span> is defined by <span class="span2">flex-direction</span>, which has four possible values:</p>
+        <br>
+        
+        <p>&#8226;<span class="span2"> row</span></p>
+        <p>&#8226;<span class="span2"> row-reverse</span></p>
+        <p>&#8226; <span class="span2">column</span></p>
+        <p>&#8226; <span class="span2">column-reverse</span></p>
+
+         <br>
+
+         <p>Should you choose <span class="span2">row</span> or <span class="span2">row-reverse</span>, your main axis will run along the row in the inline direction.</p>
+        <br><br>
+        <h1 id="flex">The flex container</h1> <br><br>
+
+        <p>An area of a document that is laid out using flexbox is called a flex container. To create a <span>flex container</span>, 
+        set the area's <span class="span1">display</span> property to <span class="span2">flex</span>. When we do this, the direct children of that container become flex items.
+        You can explicitly control whether the container itself is displayed inline or in block formatting context using or
+        <span class="span2">inline flex</span> inline-flex for inline <span class="span2">flex</span> containers or block flex or flex for block level flex containers.</p>
+        <br><br>
+        <h1 id="values">Initial values</h1> <br>
+        <p>As with all properties in CSS, some initial values are defined, so the contents of a new flex 
+        container will behave in the following way:</p>
+        <p>&#8226; Items display in a row (the <span class="span1">flex-direction</span> property's default value is <span class="span2">row</span> )</p>
+        <p>&#8226; The items start from the start edge of the main axis.</p>
+        <p>&#8226; The items do not stretch on the main dimension but can shrink (a flex-item's <span class="span1">flex-grow</span> property's default
+        value is <span class="span2">0</span> and its <span class="span1">flex-shrink</span> property's default value is <span class="span2">1</span>).</p>
+        <p>&#8226; he flex-item's <span class="span1">flex-basis</span> property's default value is <span class="span1">auto</span>. This means that, in each case, it will be equal to the flex item <span class="span1">width</span> in
+         horizontal writing mode, and the flex item <span class="span1">height</span> in vertical writing mode. If the corresponding <span class="span2">width</span>/ <span class="span2">height</span> is also set to <span class="span2"> auto</span>, the <span class="span2">flex-basis</span>
+        <span class="span2">content</span> value is used instead.</p>
+        <p>All the items will be in a single row (the <span class="span1">flex-wrap</span> property's default value is <span class="span2">nowrap</span>), overflowing their container
+         if their combined <span class="span2">width</span>/<span class="span2">height</span> exceeds the containing element <span class="span2">width</span>/<span class="span2">height</span>.</p>
+
+         <br>
+         <p>The result of this is that your items will all line up in a row, using the size of the content as their size in the main axis. If there are more items than can fit in the container, they will not
+         wrap but will instead overflow. If some items are taller than others, all items will stretch along the full length of the cross-axis.</p>
+       
+        <p> You can see in the live sample below how this looks. Click "Play" to open the example in the MDN Playground and edit the items or add new items to try out the initial behavior of flexbox:</p>
+     </div>
+
+       <div class="scrolling">
+        <h1>In this article</h1> <br><br>
+       <a href="#Basic">Basic concepts of flexbox</a>
+       <a href="#two">The two axes of flexbox</a>
+       <a href="#main">The main axis</a>
+       <a href="#flex">The flex container</a>
+       <a href="#values">Initial values</a>
+       </div>
+
+    </div>
+
+
+
+</body>
+</html>
