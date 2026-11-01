@@ -118,7 +118,8 @@ nav a:hover{
 .belowheader{
     display: flex;
     margin: auto;
-    height: 6vh;
+    height: auto;
+    min-height: 6vh;
     max-width: 1600vw;
     background-color: #eeecec;
     align-items: center;
@@ -229,7 +230,7 @@ li{
     display: flex;
     flex-direction: column;
     gap: 12px;
-    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
 
 }
 
@@ -242,5 +243,90 @@ li{
     color: rgb(7, 7, 172);
     text-decoration: underline;
 }
+
+/*////////////////////////////////////////////////
+                actual content ENDS
+///////////////////////////////////////////////// */
+
+/*////////////////////////////////////////////////
+                FOOTER 
+///////////////////////////////////////////////// */
+
+
+footer{
+    height: auto;
+    width: 100%;
+    background: #f1f3f9;
+    margin-top: 12px;
+}
+
+.footer{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-2{
+    flex-direction: row;
+    display: flex;
+    gap: 100px;
+}
+
+.logooo{
+    width: 120px;
+    height: 100px;
+}
+
+.iconss{
+    margin-top: 30%;
+}
+
+.p-heading{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgb(59, 58, 58);
+    font-size: 25px;
+}
+
+.p-line{
+    text-decoration: underline;
+    color: rgb(59, 58, 58);
+    line-height: 2;
+}
+
+.p-line:hover{
+    color: black;
+}
+
+
+/* //////////////////////////////////////////
+             after FOOTER Ends
+////////////////////////////////////////////*/
+
+.footer2{
+    margin: 0;
+    border: 1px solid rgb(107, 107, 107);
+    justify-content: left;
+    line-height: 2;
+    padding: 10px;
+}
+
+.name{
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+    color: rgb(59, 58, 58);
+    gap: 20px;
+}
+
+.name1{
+    margin-left: 40px;
+    color: rgb(59, 58, 58);
+}
+
+/* //////////////////////////////////////////
+             after FOOTER
+////////////////////////////////////////////*/
+
 
 
